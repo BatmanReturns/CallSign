@@ -1,0 +1,6 @@
+framework module CallSignNetworking {
+  umbrella header "CallSignNetworking.h"
+  export *
+
+  module * { export * }
+}

@@ -1,0 +1,725 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		450153B22C5402A600ECD8F4 /* ImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 450153B12C5402A600ECD8F4 /* ImageCache.m */; };
+		450153B82C54B44A00ECD8F4 /* CSCustomActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 450153B72C54B44A00ECD8F4 /* CSCustomActivityIndicator.m */; };
+		450153F62C54CC9600ECD8F4 /* CallSignNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450153F42C54CC8D00ECD8F4 /* CallSignNetworking.framework */; };
+		450153F72C54CC9600ECD8F4 /* CallSignNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 450153F42C54CC8D00ECD8F4 /* CallSignNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		450153FA2C54CCF900ECD8F4 /* NSObject+JSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 450153F92C54CCF900ECD8F4 /* NSObject+JSONSerialization.m */; };
+		457A1B132C54DAAB00D6AF75 /* CallsignUserAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 457A1B122C54DAAB00D6AF75 /* CallsignUserAppTests.m */; };
+		457A1B1D2C54E1D700D6AF75 /* CallSignNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450153F42C54CC8D00ECD8F4 /* CallSignNetworking.framework */; platformFilter = ios; };
+		457A1B1E2C54E1D700D6AF75 /* CallSignNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 450153F42C54CC8D00ECD8F4 /* CallSignNetworking.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		45D60EF92C50B20100A521AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D60EF82C50B20100A521AF /* AppDelegate.m */; };
+		45D60EFC2C50B20100A521AF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D60EFB2C50B20100A521AF /* SceneDelegate.m */; };
+		45D60EFF2C50B20100A521AF /* EmployeeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D60EFE2C50B20100A521AF /* EmployeeListViewController.m */; };
+		45D60F022C50B20100A521AF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 45D60F012C50B20100A521AF /* Base */; };
+		45D60F042C50B20400A521AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D60F032C50B20400A521AF /* Assets.xcassets */; };
+		45D60F072C50B20400A521AF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 45D60F062C50B20400A521AF /* Base */; };
+		45D60F0A2C50B20400A521AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D60F092C50B20400A521AF /* main.m */; };
+		45D60F282C50B7DF00A521AF /* EmployeeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D60F272C50B7DF00A521AF /* EmployeeViewModel.m */; };
+		45D60F2C2C50B85200A521AF /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D60F2B2C50B85200A521AF /* Employee.m */; };
+		45D60F322C51FEF600A521AF /* EmployeeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D60F312C51FEF600A521AF /* EmployeeResponse.m */; };
+		45D60F3A2C53F7AB00A521AF /* EmployeeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D60F382C53F7AB00A521AF /* EmployeeCell.m */; };
+		45D60F3B2C53F7AB00A521AF /* EmployeeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45D60F392C53F7AB00A521AF /* EmployeeCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		457A1B142C54DAAB00D6AF75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45D60EEC2C50B20100A521AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45D60EF32C50B20100A521AF;
+			remoteInfo = CallsignUserApp;
+		};
+		457A1B692C54E8D000D6AF75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45D60EEC2C50B20100A521AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45D60EF32C50B20100A521AF;
+			remoteInfo = CallsignUserApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		450153F32C54C63C00ECD8F4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				450153F72C54CC9600ECD8F4 /* CallSignNetworking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		457A1B1F2C54E1D700D6AF75 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				457A1B1E2C54E1D700D6AF75 /* CallSignNetworking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		450153B02C5402A600ECD8F4 /* ImageCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCache.h; sourceTree = "<group>"; };
+		450153B12C5402A600ECD8F4 /* ImageCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageCache.m; sourceTree = "<group>"; };
+		450153B62C54B44A00ECD8F4 /* CSCustomActivityIndicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSCustomActivityIndicator.h; sourceTree = "<group>"; };
+		450153B72C54B44A00ECD8F4 /* CSCustomActivityIndicator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSCustomActivityIndicator.m; sourceTree = "<group>"; };
+		450153F42C54CC8D00ECD8F4 /* CallSignNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CallSignNetworking.framework; sourceTree = "<group>"; };
+		450153F82C54CCF900ECD8F4 /* NSObject+JSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSONSerialization.h"; sourceTree = "<group>"; };
+		450153F92C54CCF900ECD8F4 /* NSObject+JSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSONSerialization.m"; sourceTree = "<group>"; };
+		457A1B102C54DAAB00D6AF75 /* CallsignUserAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CallsignUserAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		457A1B122C54DAAB00D6AF75 /* CallsignUserAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallsignUserAppTests.m; sourceTree = "<group>"; };
+		457A1B652C54E8D000D6AF75 /* CallsignUserAppTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CallsignUserAppTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45D60EF42C50B20100A521AF /* CallsignUserApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallsignUserApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45D60EF72C50B20100A521AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		45D60EF82C50B20100A521AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		45D60EFA2C50B20100A521AF /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		45D60EFB2C50B20100A521AF /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		45D60EFD2C50B20100A521AF /* EmployeeListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmployeeListViewController.h; sourceTree = "<group>"; };
+		45D60EFE2C50B20100A521AF /* EmployeeListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmployeeListViewController.m; sourceTree = "<group>"; };
+		45D60F012C50B20100A521AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45D60F032C50B20400A521AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45D60F062C50B20400A521AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		45D60F082C50B20400A521AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45D60F092C50B20400A521AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		45D60F262C50B7DF00A521AF /* EmployeeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmployeeViewModel.h; sourceTree = "<group>"; };
+		45D60F272C50B7DF00A521AF /* EmployeeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmployeeViewModel.m; sourceTree = "<group>"; };
+		45D60F2A2C50B85200A521AF /* Employee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		45D60F2B2C50B85200A521AF /* Employee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		45D60F302C51FEF600A521AF /* EmployeeResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmployeeResponse.h; sourceTree = "<group>"; };
+		45D60F312C51FEF600A521AF /* EmployeeResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmployeeResponse.m; sourceTree = "<group>"; };
+		45D60F372C53F7AB00A521AF /* EmployeeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmployeeCell.h; sourceTree = "<group>"; };
+		45D60F382C53F7AB00A521AF /* EmployeeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmployeeCell.m; sourceTree = "<group>"; };
+		45D60F392C53F7AB00A521AF /* EmployeeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		457A1B0D2C54DAAB00D6AF75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457A1B1D2C54E1D700D6AF75 /* CallSignNetworking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		457A1B622C54E8D000D6AF75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45D60EF12C50B20100A521AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				450153F62C54CC9600ECD8F4 /* CallSignNetworking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		450153B92C54BB5000ECD8F4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				450153F82C54CCF900ECD8F4 /* NSObject+JSONSerialization.h */,
+				450153F92C54CCF900ECD8F4 /* NSObject+JSONSerialization.m */,
+				450153B02C5402A600ECD8F4 /* ImageCache.h */,
+				450153B12C5402A600ECD8F4 /* ImageCache.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		457A1B112C54DAAB00D6AF75 /* CallsignUserAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				457A1B122C54DAAB00D6AF75 /* CallsignUserAppTests.m */,
+			);
+			path = CallsignUserAppTests;
+			sourceTree = "<group>";
+		};
+		45D60EEB2C50B20100A521AF = {
+			isa = PBXGroup;
+			children = (
+				45D60EF62C50B20100A521AF /* CallsignUserApp */,
+				457A1B112C54DAAB00D6AF75 /* CallsignUserAppTests */,
+				45D60EF52C50B20100A521AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45D60EF52C50B20100A521AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45D60EF42C50B20100A521AF /* CallsignUserApp.app */,
+				457A1B102C54DAAB00D6AF75 /* CallsignUserAppTests.xctest */,
+				457A1B652C54E8D000D6AF75 /* CallsignUserAppTest.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45D60EF62C50B20100A521AF /* CallsignUserApp */ = {
+			isa = PBXGroup;
+			children = (
+				45D60EF72C50B20100A521AF /* AppDelegate.h */,
+				45D60EF82C50B20100A521AF /* AppDelegate.m */,
+				45D60EFA2C50B20100A521AF /* SceneDelegate.h */,
+				45D60EFB2C50B20100A521AF /* SceneDelegate.m */,
+				450153B92C54BB5000ECD8F4 /* Helpers */,
+				45D60F292C50B80500A521AF /* Model */,
+				45D60F362C53F61200A521AF /* View */,
+				45D60F252C50B79600A521AF /* ViewModel */,
+				45D60F002C50B20100A521AF /* Main.storyboard */,
+				450153F42C54CC8D00ECD8F4 /* CallSignNetworking.framework */,
+				45D60F032C50B20400A521AF /* Assets.xcassets */,
+				45D60F052C50B20400A521AF /* LaunchScreen.storyboard */,
+				45D60F082C50B20400A521AF /* Info.plist */,
+				45D60F092C50B20400A521AF /* main.m */,
+			);
+			path = CallsignUserApp;
+			sourceTree = "<group>";
+		};
+		45D60F252C50B79600A521AF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				45D60F262C50B7DF00A521AF /* EmployeeViewModel.h */,
+				45D60F272C50B7DF00A521AF /* EmployeeViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		45D60F292C50B80500A521AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				45D60F2A2C50B85200A521AF /* Employee.h */,
+				45D60F2B2C50B85200A521AF /* Employee.m */,
+				45D60F302C51FEF600A521AF /* EmployeeResponse.h */,
+				45D60F312C51FEF600A521AF /* EmployeeResponse.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		45D60F362C53F61200A521AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				45D60EFD2C50B20100A521AF /* EmployeeListViewController.h */,
+				45D60EFE2C50B20100A521AF /* EmployeeListViewController.m */,
+				450153B62C54B44A00ECD8F4 /* CSCustomActivityIndicator.h */,
+				450153B72C54B44A00ECD8F4 /* CSCustomActivityIndicator.m */,
+				45D60F372C53F7AB00A521AF /* EmployeeCell.h */,
+				45D60F382C53F7AB00A521AF /* EmployeeCell.m */,
+				45D60F392C53F7AB00A521AF /* EmployeeCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		457A1B0F2C54DAAB00D6AF75 /* CallsignUserAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 457A1B182C54DAAB00D6AF75 /* Build configuration list for PBXNativeTarget "CallsignUserAppTests" */;
+			buildPhases = (
+				457A1B0C2C54DAAB00D6AF75 /* Sources */,
+				457A1B0D2C54DAAB00D6AF75 /* Frameworks */,
+				457A1B0E2C54DAAB00D6AF75 /* Resources */,
+				457A1B1F2C54E1D700D6AF75 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				457A1B152C54DAAB00D6AF75 /* PBXTargetDependency */,
+			);
+			name = CallsignUserAppTests;
+			productName = CallsignUserAppTests;
+			productReference = 457A1B102C54DAAB00D6AF75 /* CallsignUserAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		457A1B642C54E8D000D6AF75 /* CallsignUserAppTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 457A1B6B2C54E8D000D6AF75 /* Build configuration list for PBXNativeTarget "CallsignUserAppTest" */;
+			buildPhases = (
+				457A1B612C54E8D000D6AF75 /* Sources */,
+				457A1B622C54E8D000D6AF75 /* Frameworks */,
+				457A1B632C54E8D000D6AF75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				457A1B6A2C54E8D000D6AF75 /* PBXTargetDependency */,
+			);
+			name = CallsignUserAppTest;
+			productName = CallsignUserAppTest;
+			productReference = 457A1B652C54E8D000D6AF75 /* CallsignUserAppTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		45D60EF32C50B20100A521AF /* CallsignUserApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45D60F0D2C50B20400A521AF /* Build configuration list for PBXNativeTarget "CallsignUserApp" */;
+			buildPhases = (
+				45D60EF02C50B20100A521AF /* Sources */,
+				45D60EF12C50B20100A521AF /* Frameworks */,
+				45D60EF22C50B20100A521AF /* Resources */,
+				450153F32C54C63C00ECD8F4 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CallsignUserApp;
+			productName = CallsignUserApp;
+			productReference = 45D60EF42C50B20100A521AF /* CallsignUserApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45D60EEC2C50B20100A521AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					457A1B0F2C54DAAB00D6AF75 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 45D60EF32C50B20100A521AF;
+					};
+					457A1B642C54E8D000D6AF75 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 45D60EF32C50B20100A521AF;
+					};
+					45D60EF32C50B20100A521AF = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 45D60EEF2C50B20100A521AF /* Build configuration list for PBXProject "CallsignUserApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45D60EEB2C50B20100A521AF;
+			productRefGroup = 45D60EF52C50B20100A521AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45D60EF32C50B20100A521AF /* CallsignUserApp */,
+				457A1B0F2C54DAAB00D6AF75 /* CallsignUserAppTests */,
+				457A1B642C54E8D000D6AF75 /* CallsignUserAppTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		457A1B0E2C54DAAB00D6AF75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		457A1B632C54E8D000D6AF75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45D60EF22C50B20100A521AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45D60F042C50B20400A521AF /* Assets.xcassets in Resources */,
+				45D60F3B2C53F7AB00A521AF /* EmployeeCell.xib in Resources */,
+				45D60F072C50B20400A521AF /* Base in Resources */,
+				45D60F022C50B20100A521AF /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		457A1B0C2C54DAAB00D6AF75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457A1B132C54DAAB00D6AF75 /* CallsignUserAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		457A1B612C54E8D000D6AF75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45D60EF02C50B20100A521AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45D60F322C51FEF600A521AF /* EmployeeResponse.m in Sources */,
+				45D60F282C50B7DF00A521AF /* EmployeeViewModel.m in Sources */,
+				45D60EFF2C50B20100A521AF /* EmployeeListViewController.m in Sources */,
+				45D60EF92C50B20100A521AF /* AppDelegate.m in Sources */,
+				45D60F2C2C50B85200A521AF /* Employee.m in Sources */,
+				45D60F0A2C50B20400A521AF /* main.m in Sources */,
+				450153B22C5402A600ECD8F4 /* ImageCache.m in Sources */,
+				450153FA2C54CCF900ECD8F4 /* NSObject+JSONSerialization.m in Sources */,
+				450153B82C54B44A00ECD8F4 /* CSCustomActivityIndicator.m in Sources */,
+				45D60F3A2C53F7AB00A521AF /* EmployeeCell.m in Sources */,
+				45D60EFC2C50B20100A521AF /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		457A1B152C54DAAB00D6AF75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45D60EF32C50B20100A521AF /* CallsignUserApp */;
+			targetProxy = 457A1B142C54DAAB00D6AF75 /* PBXContainerItemProxy */;
+		};
+		457A1B6A2C54E8D000D6AF75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45D60EF32C50B20100A521AF /* CallsignUserApp */;
+			targetProxy = 457A1B692C54E8D000D6AF75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		45D60F002C50B20100A521AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45D60F012C50B20100A521AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		45D60F052C50B20400A521AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45D60F062C50B20400A521AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		457A1B162C54DAAB00D6AF75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UMW3NKDH68;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CallsignUserApp",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.subhajit.CallsignUserAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CallsignUserApp.app/CallsignUserApp";
+			};
+			name = Debug;
+		};
+		457A1B172C54DAAB00D6AF75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UMW3NKDH68;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CallsignUserApp",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.subhajit.CallsignUserAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CallsignUserApp.app/CallsignUserApp";
+			};
+			name = Release;
+		};
+		457A1B6C2C54E8D000D6AF75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UMW3NKDH68;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.subhajit.CallsignUserAppTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CallsignUserApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CallsignUserApp";
+			};
+			name = Debug;
+		};
+		457A1B6D2C54E8D000D6AF75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UMW3NKDH68;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.subhajit.CallsignUserAppTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CallsignUserApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CallsignUserApp";
+			};
+			name = Release;
+		};
+		45D60F0B2C50B20400A521AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		45D60F0C2C50B20400A521AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45D60F0E2C50B20400A521AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UMW3NKDH68;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CallsignUserApp/ViewModel",
+					"$(PROJECT_DIR)/CallsignUserApp",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CallsignUserApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.subhajit.CallsignUserApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45D60F0F2C50B20400A521AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UMW3NKDH68;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CallsignUserApp/ViewModel",
+					"$(PROJECT_DIR)/CallsignUserApp",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CallsignUserApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.subhajit.CallsignUserApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		457A1B182C54DAAB00D6AF75 /* Build configuration list for PBXNativeTarget "CallsignUserAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				457A1B162C54DAAB00D6AF75 /* Debug */,
+				457A1B172C54DAAB00D6AF75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		457A1B6B2C54E8D000D6AF75 /* Build configuration list for PBXNativeTarget "CallsignUserAppTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				457A1B6C2C54E8D000D6AF75 /* Debug */,
+				457A1B6D2C54E8D000D6AF75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45D60EEF2C50B20100A521AF /* Build configuration list for PBXProject "CallsignUserApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45D60F0B2C50B20400A521AF /* Debug */,
+				45D60F0C2C50B20400A521AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45D60F0D2C50B20400A521AF /* Build configuration list for PBXNativeTarget "CallsignUserApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45D60F0E2C50B20400A521AF /* Debug */,
+				45D60F0F2C50B20400A521AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45D60EEC2C50B20100A521AF /* Project object */;
+}
